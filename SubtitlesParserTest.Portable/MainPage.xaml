@@ -5,6 +5,9 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center"
             VerticalOptions="Center">
+            <Label x:Name="ttmlCaption" />
+            <Label x:Name="vttCaption" />
+
             <Button Text="Load ttml"
                     Clicked="OnTTMLProcessed"/>
             <Button Text="Load vtt"
