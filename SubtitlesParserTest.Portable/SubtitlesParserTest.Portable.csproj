@@ -7,20 +7,22 @@
   <ItemGroup>
     <None Remove="App.xaml" />
     <None Remove="MainPage.xaml" />
+    <None Remove="TestFiles\2518_aud_SpReco.ttml" />
+    <None Remove="TestFiles\2518_aud_SpReco.vtt" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="2518_aud_SpReco.ttml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="2518_aud_SpReco.vtt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="App.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestFiles\2518_aud_SpReco.ttml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestFiles\2518_aud_SpReco.vtt">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 

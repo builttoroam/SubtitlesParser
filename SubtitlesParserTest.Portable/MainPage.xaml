@@ -1,17 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:SubtitlesParserTest.Portable.Converters"
              x:Class="SubtitlesParserTest.Portable.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:IntegerToTimeSpanConverter x:Key="timeFormatCvt" />
+            <converters:ClosedCaptionLinesConverter x:Key="linesCvt" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center"
-            VerticalOptions="Center">
-            <Label x:Name="ttmlCaption" />
-            <Label x:Name="vttCaption" />
-
-            <Button Text="Load ttml"
-                    Clicked="OnTTMLProcessed"/>
-            <Button Text="Load vtt"
-                    Clicked="OnVTTProcessed"/>
-        </StackLayout>
+        <Grid HorizontalOptions="Center"
+              VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ListView x:Name="ttmlList"
+                      Header="TTML Parser">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding StartTime, Converter={StaticResource timeFormatCvt}}" />
+                                <Label Text="{Binding Lines, Converter={StaticResource linesCvt}}" />
+                                <Label Text="{Binding EndTime, Converter={StaticResource timeFormatCvt}}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="vttList"
+                Header="VTT Parser"
+                Grid.Row="1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding StartTime, Converter={StaticResource timeFormatCvt}}" />
+                                <Label Text="{Binding Lines, Converter={StaticResource linesCvt}}" />
+                                <Label Text="{Binding EndTime, Converter={StaticResource timeFormatCvt}}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
