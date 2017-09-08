@@ -27,21 +27,19 @@ namespace SubtitlesParserTest.Portable
         private void ProcessSubtitle(string resourceId)
         {
             Debug.WriteLine($"Resource Id: {resourceId}");
-
-            var fileNames = resourceId.Split('.');
-            var fileName = fileNames.Length > 1 ?  $"{fileNames[fileNames.Length - 2]}.{fileNames[fileNames.Length - 1]}" : string.Empty;
-            Debug.WriteLine($"FileName: {fileName}");
-            var resourceStream = GetType().GetTypeInfo().Assembly.GetManifestResourceStream(resourceId);
-	        var parser = new SubtitlesParserNew.Classes.Parsers.SubParser();
-            
             try
             {
+                var fileNames = resourceId.Split('.');
+                var fileName = fileNames.Length > 1 ?  $"{fileNames[fileNames.Length - 2]}.{fileNames[fileNames.Length - 1]}" : string.Empty;
+                Debug.WriteLine($"FileName: {fileName}");
+                var resourceStream = GetType().GetTypeInfo().Assembly.GetManifestResourceStream(resourceId);
+	            var parser = new SubtitlesParserNew.Classes.Parsers.SubParser();
+            
 	            var mostLikelyFormat = parser.GetMostLikelyFormat(fileName);
 	            if (mostLikelyFormat == SubtitlesFormat.TtmlFormat)
 	            {
 	                var ttmlItems = parser.ParseStream(resourceStream, Encoding.UTF8, mostLikelyFormat);
                     ttmlList.ItemsSource = ttmlItems;
-
                 }
                 else if (mostLikelyFormat == SubtitlesFormat.WebVttFormat)
 	            {
