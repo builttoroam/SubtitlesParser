@@ -152,7 +152,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SubtitlesParserTest.Portable\SubtitlesParserTest.Portable.csproj">
+    <ProjectReference Include="..\SubtitlesParserTest.Portable\SubtitlesParserTest.Portable.csproj">
       <Project>{4d2bbd77-5fb5-46ed-b7d5-924a03790dba}</Project>
       <Name>SubtitlesParserTest.Portable</Name>
     </ProjectReference>

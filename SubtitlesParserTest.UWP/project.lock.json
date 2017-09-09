@@ -24344,13 +24344,13 @@
     },
     "SubtitlesParserNew/1.0.0": {
       "type": "project",
-      "path": "../../SubtitlesParserNew/SubtitlesParserNew.csproj",
-      "msbuildProject": "../../SubtitlesParserNew/SubtitlesParserNew.csproj"
+      "path": "../SubtitlesParserNew/SubtitlesParserNew.csproj",
+      "msbuildProject": "../SubtitlesParserNew/SubtitlesParserNew.csproj"
     },
     "SubtitlesParserTest.Portable/1.0.0": {
       "type": "project",
-      "path": "../../SubtitlesParserTest.Portable/SubtitlesParserTest.Portable.csproj",
-      "msbuildProject": "../../SubtitlesParserTest.Portable/SubtitlesParserTest.Portable.csproj"
+      "path": "../SubtitlesParserTest.Portable/SubtitlesParserTest.Portable.csproj",
+      "msbuildProject": "../SubtitlesParserTest.Portable/SubtitlesParserTest.Portable.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -24361,19 +24361,19 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\JaySim\\.nuget\\packages\\": {}
+    "C:\\Users\\Jay\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\JaySim\\source\\repos\\SubtitlesParser\\SubtitlesParserTest\\SubtitlesParserTest.UWP\\SubtitlesParserTest.UWP.csproj",
+      "projectUniqueName": "C:\\Source\\SubtitlesParser\\SubtitlesParserTest.UWP\\SubtitlesParserTest.UWP.csproj",
       "projectName": "SubtitlesParserTest.UWP",
-      "projectPath": "C:\\Users\\JaySim\\source\\repos\\SubtitlesParser\\SubtitlesParserTest\\SubtitlesParserTest.UWP\\SubtitlesParserTest.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\JaySim\\source\\repos\\SubtitlesParser\\SubtitlesParserTest\\SubtitlesParserTest.UWP\\project.json",
-      "packagesPath": "C:\\Users\\JaySim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JaySim\\source\\repos\\SubtitlesParser\\SubtitlesParserTest\\SubtitlesParserTest.UWP\\obj\\",
+      "projectPath": "C:\\Source\\SubtitlesParser\\SubtitlesParserTest.UWP\\SubtitlesParserTest.UWP.csproj",
+      "projectJsonPath": "C:\\Source\\SubtitlesParser\\SubtitlesParserTest.UWP\\project.json",
+      "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
+      "outputPath": "C:\\Source\\SubtitlesParser\\SubtitlesParserTest.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\JaySim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jay\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -24383,8 +24383,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\JaySim\\source\\repos\\SubtitlesParser\\SubtitlesParserTest.Portable\\SubtitlesParserTest.Portable.csproj": {
-              "projectPath": "C:\\Users\\JaySim\\source\\repos\\SubtitlesParser\\SubtitlesParserTest.Portable\\SubtitlesParserTest.Portable.csproj"
+            "C:\\Source\\SubtitlesParser\\SubtitlesParserTest.Portable\\SubtitlesParserTest.Portable.csproj": {
+              "projectPath": "C:\\Source\\SubtitlesParser\\SubtitlesParserTest.Portable\\SubtitlesParserTest.Portable.csproj"
             }
           }
         }
